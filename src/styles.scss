@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+  padding: 0;
+  margin: 0px !important;
+  font-family: 'Raleway', sans-serif;
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    color: #333;
+  }
+  .ms-mt-35 {
+    margin-top: 35px;
+  }
+}
+
+.mat-toolbar.mat-primary {
+  height: 45px;
+  min-height: 40px;
+  justify-content: center;
+  background: linear-gradient(141deg, #f009d5 0%, #7e5fed 51%, #278ffb 75%);
+}
+
+// linear-gradient(141deg, #5535ff 0%, #3482ff 51%, #30ccff 75%);

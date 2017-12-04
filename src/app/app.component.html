@@ -1,21 +1,25 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<header>
+  <!--The content below is only a placeholder and can be replaced.-->
+  <mat-toolbar color="primary" class="mat-elevation-z10">
+    <img src="assets/images/logo.png" width="40">
+    <a [routerLink]="['/']" class="brand"> Balprakash</a>
+    <span class="example-spacer"></span>
+    <div>
+      <a [routerLink]="['/about-us']" class="nav-links" [ngClass]="{'active': checkCurrentRoute(aboutus)}" mat-button #aboutus>About Us</a>
+      <a [routerLink]="['/videos']" class="nav-links" [ngClass]="{'active': checkCurrentRoute(video)}" mat-button #video>Videos</a>
+      <a [routerLink]="['/gallery']" class="nav-links" [ngClass]="{'active': checkCurrentRoute(gallery)}" mat-button #gallery>Gallery</a>
+      <a [routerLink]="['/contact-us']" class="nav-links" [ngClass]="{'active': checkCurrentRoute(contact)}" mat-button #contact>Contact Us</a>
+    </div>
+  </mat-toolbar>
+</header>
 <router-outlet></router-outlet>
+<footer>
+  <div class="footer-1">
+    Donations in favour of the trust are valid for exemption Under 80G of the Income Tax Act. PAN : AAETS7723C
+  </div>
+  <div class="footer-2" fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-between">
+    <p>Registration No. 172/Ajmer/2005-06</p>
+    <p>© 2017-2018</p>
+    <p>Shri Tikaram Paliwal & Prakash Paliwal Janhitkari Trust</p>
+  </div>
+</footer>
